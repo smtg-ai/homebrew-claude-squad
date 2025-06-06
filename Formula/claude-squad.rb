@@ -5,7 +5,7 @@
 class ClaudeSquad < Formula
   desc "Manage multiple AI agents like Claude Code, Aider, and more. 10x your productivity."
   homepage "https://smtg-ai.github.io/claude-squad/"
-  version "1.0.4"
+  version "1.0.5"
   license "AGPL-3.0"
 
   depends_on "gh" => :optional
@@ -13,16 +13,16 @@ class ClaudeSquad < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.4/claude-squad_1.0.4_darwin_amd64.tar.gz"
-      sha256 "d26dbd603a94021284cec1d80683a60b927f7786bff7df2f5ad7e4ccb3dbd17a"
+      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_darwin_amd64.tar.gz"
+      sha256 "b85e9488b13bdc76f4d2257ca0a7eb7ae94f2f7e7b71d0d76673747627baabe5"
 
       def install
         bin.install "claude-squad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.4/claude-squad_1.0.4_darwin_arm64.tar.gz"
-      sha256 "e1fa776d5a927ee313457b78aeb05734078b9f8c97d7ec016eb2292ea5129125"
+      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_darwin_arm64.tar.gz"
+      sha256 "56e2838c73403b36c99e4175551d2850ab3050c6877e9d6e5e1d9adb9d054607"
 
       def install
         bin.install "claude-squad"
@@ -32,15 +32,15 @@ class ClaudeSquad < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.4/claude-squad_1.0.4_linux_amd64.tar.gz"
-      sha256 "473d729e9a59ac995fed6bdd81f7ef7d80f3675017ed9611857a9ddc934058f2"
+      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_linux_amd64.tar.gz"
+      sha256 "2b0188ebb306a5984433330d9039b35581cb3880a29828e4da4a8a2c537a671e"
       def install
         bin.install "claude-squad"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.4/claude-squad_1.0.4_linux_arm64.tar.gz"
-      sha256 "2b46ebef2a33b05b0b1ade1ca9bd21e1064f6e5b393c3373c1684658c8e3dc11"
+      url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_linux_arm64.tar.gz"
+      sha256 "172b34b0edbc9e14fb6b89c929b5f7d9cfed8c26d94d36507450f37d01946e93"
       def install
         bin.install "claude-squad"
       end
