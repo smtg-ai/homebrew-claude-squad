@@ -14,7 +14,7 @@ class ClaudeSquad < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_darwin_amd64.tar.gz"
-      sha256 "b85e9488b13bdc76f4d2257ca0a7eb7ae94f2f7e7b71d0d76673747627baabe5"
+      sha256 "aabfc12db70b8bef80cda9408e824a9e71575bcb85e7ff6bbc1bd0e53875de5c"
 
       def install
         bin.install "claude-squad"
@@ -22,7 +22,7 @@ class ClaudeSquad < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_darwin_arm64.tar.gz"
-      sha256 "56e2838c73403b36c99e4175551d2850ab3050c6877e9d6e5e1d9adb9d054607"
+      sha256 "03db0c2479aecb64fac77172cc22b5bc19d4c9824bfed5ad4776e986561ac965"
 
       def install
         bin.install "claude-squad"
@@ -33,14 +33,14 @@ class ClaudeSquad < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_linux_amd64.tar.gz"
-      sha256 "2b0188ebb306a5984433330d9039b35581cb3880a29828e4da4a8a2c537a671e"
+      sha256 "563b1fb33a8b5a7528766f60694bc425c6af1ed697a1a85eb44ac2f371e7c2bb"
       def install
         bin.install "claude-squad"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.5/claude-squad_1.0.5_linux_arm64.tar.gz"
-      sha256 "172b34b0edbc9e14fb6b89c929b5f7d9cfed8c26d94d36507450f37d01946e93"
+      sha256 "14395807e4c38067ca34ad60c20e34516a239705ecfb4f5235f6b507f883ed88"
       def install
         bin.install "claude-squad"
       end
